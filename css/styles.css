@@ -678,12 +678,14 @@ img {
 
 .modal-btb-clouse:hover {
      background-color: #404bbf;
+     fill: #ffffff;
      border: none;
 
 }
 
 .modal-btb-clouse:focus {
      background-color: #404bbf;
+     fill: #ffffff;
      border: none;
 }
 
@@ -780,9 +782,8 @@ img {
      border: 1px solid rgba(46, 47, 66, 0.4);
      border-radius: 4px;
      background-color: transparent;
-     
      outline: transparent;
-     transition: border-color 250ms cubic-bezie(0.4, 0, 0.2, 1);
+     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      font-size: 12px;
      font-weight: 400;
      line-height: 1.17;
