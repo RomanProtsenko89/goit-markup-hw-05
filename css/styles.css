@@ -697,11 +697,13 @@ img {
 .modal-btb-clouse:hover {
      border: none;
      background-color: #404bbf;
+     fill: #ffffff;
 }
 
 .modal-btb-clouse:focus {
      background-color: #404bbf;
      border: none;
+     fill: #ffffff;
 }
 
 .modal-btb-clouse:hover .modal-icon-btb {
