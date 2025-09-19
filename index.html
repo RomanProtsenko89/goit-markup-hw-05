@@ -414,7 +414,26 @@
                 </ul>
 
             </div>
-
+            <div class="container-foter-email">
+            <p class="footer-email-text">Subscribe</p>
+                <form class="footer-form">
+                    
+                <label aria-label="footer email">
+                    <input class="footer-form-email"
+                     type="email"
+                     name="footer email"
+                     placeholder="E-mail">
+                </label>
+                <button type="submit" class="footer-bts">Subscribe
+                    <svg class="footer-bts-icon"
+                      width="24"
+                      height="24">
+                    <use href="./images/icons.svg#icon-Telegram">
+                    </use>
+                    </svg>
+                </button>
+                </form>
+                </div>
         </div>
     </footer>
     <div class="backdrop">
@@ -490,6 +509,25 @@
                 class="modal-textarea modal-element"
                 name="user-text" 
                 id="user-text" placeholder="Your text"></textarea>
+                <div class="modal-checkbox">
+                    <input 
+                    class="form-input-checkbox visually-hidden" 
+                    type="checkbox" 
+                    name="policy" 
+                    id="policy"
+                    value="accepted" 
+                     />
+                    <label class="modal-checkbox-label" for="policy"> 
+                        <samp 
+                        class="modal-checkbox-box">
+                        <svg class="checkbox-box-icon"
+                        width="10" height="8">
+                        <use href="./images/icons.svg#icon-Tick"></use>
+                    </svg>    
+                    </samp>I accept the terms and conditions of the <a href="">Privacy Policy</a>
+                </label>
+                </div>
+                
 
                 <button class="form-bts" type="submit">Send</button>
                 
