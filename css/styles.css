@@ -676,17 +676,13 @@ img {
 
 }
 
-.modal-btb-clouse:hover {
-     background-color: #404bbf;
+.modal-icon-btb:hover {
      fill: #ffffff;
-     border: none;
 
 }
 
-.modal-btb-clouse:focus {
-     background-color: #404bbf;
+.modal-icon-btb:focus {
      fill: #ffffff;
-     border: none;
 }
 
 .modal-icon-btb {
@@ -699,11 +695,13 @@ img {
 }
 
 .modal-btb-clouse:hover {
-     fill: #fff;
+     border: none;
+     background-color: #404bbf;
 }
 
 .modal-btb-clouse:focus {
-     fill: #fff;
+     background-color: #404bbf;
+     border: none;
 }
 
 .modal-btb-clouse:hover .modal-icon-btb {
