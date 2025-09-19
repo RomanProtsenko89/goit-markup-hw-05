@@ -514,7 +514,7 @@ body {
 }
 
 .footer-email-text {
-     font-weight: 500
+     font-weight: 500;
      font-size: 16px;
      line-height: 1.5;
      letter-spacing: 0.02em;
@@ -629,6 +629,7 @@ img {
      opacity: 0;
      visibility: hidden;
      pointer-events: none;
+     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
      
 }
 
@@ -640,34 +641,50 @@ img {
 }
 
 .modal {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
      border-radius: 4px;
      width: 408px;
      min-height: 584px;
      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
      background: #fcfcfc;
      margin: auto;
-     padding: 24px;
+     padding: 72px 24px 24px 24px;
+     
+     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btb-clouse {
-     position: relative;
-     display: block;
-     margin-left: auto;
+     position: absolute;
+     top: 24px;
+     right: 24px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 0;
      border-radius: 50%;
      width: 24px;
      height: 24px;
      border: 1px solid rgba(0, 0, 0, 0.1);
      background-color: #E7E9FC;
      margin-bottom: 24px;
-     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     cursor: pointer;
 
 
 }
 
 .modal-btb-clouse:hover {
      background-color: #404bbf;
-     border-color: #404bbf;
+     border: none;
 
+}
+
+.modal-btb-clouse:focus {
+     background-color: #404bbf;
+     border: none;
 }
 
 .modal-icon-btb {
@@ -676,7 +693,15 @@ img {
      top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
-     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-icon-btb:hover {
+     fill: #fff;
+}
+
+.modal-icon-btb:focus {
+     fill: #fff;
 }
 
 .modal-btb-clouse:hover .modal-icon-btb {
@@ -694,7 +719,7 @@ img {
      letter-spacing: 0.02em;
      text-align: center;
      color: #2e2f42;
-     margin-bottom: 8px;
+     margin-bottom: 16px;
 }
 
 .modal-form {
@@ -705,6 +730,7 @@ img {
      height: 40px;
      padding-left: 38px;
      padding-right: 16px;
+     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:focus {
@@ -717,9 +743,10 @@ img {
 }
 
 .input-label {
+     display: block;
      font-weight: 400;
      font-size: 12px;
-     line-height: 1.16667;
+     line-height: 1.17;
      letter-spacing: 0.04em;
      color: #8e8f99;
      margin-bottom: 4px;
@@ -737,18 +764,22 @@ img {
      transform: translateY(-50%);
      fill: #2E2F42;
      position: absolute;
-     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field {
      margin-bottom: 8px;
 }
 
+.modal-comment {
+     margin-bottom: 16px;
+}
+
 .modal-textarea {
      height: 120px;  
      resize: none;  
      padding: 8px 16px;
-     margin-bottom: 19px;   
+     color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-textarea:focus {
@@ -762,13 +793,14 @@ img {
       background-color: transparent;
       color: #2e2f42;
       outline: transparent;
-      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       font-size: 12px;
       font-weight: 400;
-      line-height: 1.16667;
+      line-height: 1.17;
       letter-spacing: 0.04em;
      
 }
+
 
 .form-input::placeholder {
       font-size: 12px;
@@ -788,7 +820,7 @@ img {
      align-items: center;
      justify-content: center;
      font-size: 12px;
-     line-height: 1.16667;
+     line-height: 1.17;
      letter-spacing: 0.04em;
      color: #8e8f99;
 
@@ -852,6 +884,8 @@ img {
      border: 0;
      display: block;
      margin: 0 auto;
+     cursor: pointer;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
      
     
 
