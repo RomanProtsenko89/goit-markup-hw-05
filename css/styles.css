@@ -676,18 +676,10 @@ img {
 
 }
 
-.modal-icon-btb:hover {
-     fill: #ffffff;
 
-}
-
-.modal-icon-btb:focus {
-     fill: #ffffff;
-}
 
 .modal-icon-btb {
      fill: #2E2F42;
-     
      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -703,8 +695,14 @@ img {
      
 }
 
-.modal-btb-clouse:hover .modal-icon-btb {
+.modal-btb-clouse:hover .modal-icon-btb
+ {
      fill: #fff;
+}
+
+.modal-btb-clouse:focus .modal-icon-btb {
+     fill: #fff;
+
 }
 
 .modal-text {
